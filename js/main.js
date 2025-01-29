@@ -54,11 +54,11 @@ $(document).ready(function() {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll > 200 ) {
-      $("#main-nav, #main-nav-subpage").slideDown(700);
+      $("#main-nav, #main-nav-subpage").show();
       $("#main-nav-subpage").removeClass('subpage-nav');
     } else {
-      $("#main-nav").slideUp(700);
-      $("#main-nav-subpage").hide();
+      $("#main-nav").show();
+      $("#main-nav-subpage").show();
       $("#main-nav-subpage").addClass('subpage-nav');
     }
   });
@@ -68,7 +68,7 @@ $(document).ready(function() {
   // ========================================================================= //
 
   $('.responsive').on('click', function(e) {
-    $('.nav-menu').slideToggle();
+    $('.nav-menu').toggle();
   });
 
   // ========================================================================= //
