@@ -25,6 +25,7 @@ body {
   -o-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin-top: 80px;
 }
 
 h1, h2, h3, h4, h5, h6 {
